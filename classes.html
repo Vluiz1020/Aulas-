@@ -2,6 +2,27 @@
 <html>
 <head>
 <style>
+  .note {
+  font-size: 120%;
+  color: red;
+}
+  .descricao-2 {
+    position: relative;
+    align-items: left;
+    margin-top: 13%;
+    margin-bottom: 13%;
+  }
+  .texto {
+    position: flex;
+    align-items: center;
+    margin-left: 45%;
+  }
+  .descricao {
+    position: relative;
+    align-items: left;
+    margin-top: 13%;
+    margin-bottom: 13%;
+  }
 .city {
   background-color: tomato;
   color: white;
@@ -9,10 +30,25 @@
   margin: 20px;
   padding: 20px;
 }
+.city_tokyo{
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 15%;
+}
 </style>
 </head>
 <body>
+    <div class="texto">
+      <h2>Atributo de classe HTML<h2>
+</div>
+<div class="descricao">
+  <p>O classatributo geralmente é usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por um JavaScript para acessar e manipular elementos com o nome de classe específico.
 
+    No exemplo a seguir temos três elementos com um classatributo com o valor "cidade". Todos os três  elementos serão estilizados igualmente de acordo com a .city definição de estilo na seção head:</p>
+</div>
 <div class="city">
   <h2>London</h2>
   <p>London is the capital of England.</p>
@@ -23,10 +59,15 @@
   <p>Paris is the capital of France.</p>
 </div>
 
-<div class="city">
+<div class="city_tokyo">
   <h2>Tokyo</h2>
   <p>Tokyo is the capital of Japan.</p>
 </div>
-
+<div class="descricao-2">
+  <p>No exemplo a seguir temos dois <span>elementos com um classatributo com o valor "nota". Ambos <span> os elementos serão estilizados igualmente de acordo com a .note definição de estilo na seção head:</p>
+</div>
+</div>
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
 </body>
 </html>
